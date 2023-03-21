@@ -5,6 +5,13 @@
 
 html {
   font-size: 10px;
+  height: 100%;
+}
+body{
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .header-title {
@@ -144,21 +151,29 @@ span {
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  font-size: 1.3rem;
-  height: 35rem;
+  background-color: #5c5858;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  padding-top:1.5rem ;
+  width: 100%;
+  height: 5rem;
+  margin-top: 5rem;
+  font-size: 1.7rem;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
 }
 
 footer a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 
 footer :hover {
   font-weight: 700;
-  color: #444;
+  /* color: #444; */
   cursor: pointer;
-  transition: 500ms;
+  transition: 200ms;
 }

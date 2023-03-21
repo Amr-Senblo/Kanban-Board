@@ -4,6 +4,10 @@
     align-items: start;
     row-gap: 5rem;
   }
+  footer {
+    position: relative;
+    margin-top: 4rem;
+  }
 }
 
 @media (max-width: 45em) {
@@ -14,5 +18,9 @@
   }
   .header-title {
     font-size: 4rem;
+  }
+  footer {
+    position: relative;
+    margin-top: 3rem;
   }
 }
