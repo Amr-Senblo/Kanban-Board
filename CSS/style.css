@@ -1,0 +1,164 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.header-title {
+  font-weight: 600;
+  font-size: 5rem;
+  display: flex;
+  justify-content: space-around;
+  margin: 3.5rem;
+}
+
+.colomns-container {
+  grid-template-columns: repeat(4, 2fr);
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  align-items: start;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  gap: 1.5rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  color: black;
+  border-radius: 0.75rem 0.75rem;
+  width: 90%;
+  max-height: 40rem;
+  align-items: center;
+}
+.task-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.task-container::-webkit-scrollbar {
+  display: none;
+}
+
+.container h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+textarea {
+  display: flex;
+  resize: none;
+  min-height: 6rem;
+  max-height: 6rem;
+  width: 100%;
+  border-radius: 0.75rem;
+  border-style: none;
+  font-size: 1.8rem;
+  resize: none;
+  text-align: center;
+  padding: 2rem 4.5rem 1.5rem 1rem;
+  cursor: move;
+  box-shadow: 0 0 10px #dddddd;
+}
+textarea::-webkit-scrollbar {
+  display: none;
+}
+textarea:focus {
+  outline: none;
+  border: 1.9px solid #979797;
+}
+
+button {
+  border: 2px solid white;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 7rem;
+
+  font-weight: 700;
+}
+
+button:hover {
+  box-shadow: 0 0 10px #dddddd;
+  border: 4px double white;
+  transition: 100ms;
+}
+
+.fa-pen-to-square {
+  color: black;
+  scale: 1.5;
+  bottom: 2.7rem;
+  right: 2.5rem;
+  cursor: pointer;
+}
+.fa-trash {
+  color: rgb(0, 0, 0);
+  scale: 1.5;
+  bottom: 2.7rem;
+  right: 0.8rem;
+  cursor: pointer;
+}
+
+.fa-microphone {
+  color: rgb(0, 0, 0);
+  scale: 1.5;
+  bottom: 2.7rem;
+  right: 4.5rem;
+  cursor: pointer;
+}
+
+.fa-microphone:hover {
+  color: rgb(108, 105, 104);
+}
+
+.fa-solid {
+  visibility: hidden;
+  position: absolute;
+}
+
+.task:hover span .fa-solid {
+  visibility: visible;
+}
+.task span .fa-trash:hover {
+  color: red;
+}
+.task span .fa-pen-to-square:hover {
+  color: green;
+}
+
+span {
+  height: 0rem;
+}
+.task {
+  position: relative;
+}
+
+.task .dragging {
+  opacity: 0.5;
+}
+
+.copyRights {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  font-size: 1.3rem;
+  height: 35rem;
+}
+
+.copyRights a {
+  text-decoration: none;
+  color: #000;
+}
+
+.copyRights :hover {
+  font-weight: 700;
+  color: #444;
+  cursor: pointer;
+  transition: 500ms;
+}
